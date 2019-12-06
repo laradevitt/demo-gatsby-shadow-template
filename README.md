@@ -12,9 +12,9 @@ Demo'ing two issues.
 
 Both issues concern shadowed components in *gatsby-starter-default/src/gatsby-theme-minimal-example/templates/*.
 
-### Issue \#1
+### [Issue \#1](#issue-one)
 
-##### Query is not run in shadow component when original component is imported.
+##### Page query is not run in shadow component when original component is imported.
 
 In *article.js*, the component is **not** imported.  
 In *section.js*, the component is imported.
@@ -31,7 +31,7 @@ warn The GraphQL query in the non-page component "D:/lib/dev/temp/demo-gatsby-sh
 */section/about* - no query data
 
 
-### Issue \#2
+### [Issue \#2](#issue-two)
 
 ##### GraphQL error: Multiple "root" queries found
 
