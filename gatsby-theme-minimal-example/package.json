@@ -1,0 +1,13 @@
+{
+  "name": "gatsby-theme-minimal-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "gatsby-source-prismic-graphql": "^3.3.1"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.18.6",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}

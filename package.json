@@ -1,0 +1,17 @@
+{
+  "name": "demo-gatsby-shadow-template",
+  "private": true,
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn workspace gatsby-starter-default build",
+    "develop": "yarn workspace gatsby-starter-default develop",
+    "serve": "yarn workspace gatsby-starter-default gatsby serve",
+    "clean": "yarn workspace gatsby-starter-default gatsby clean"
+  },
+  "workspaces": [
+    "gatsby-theme-minimal-example",
+    "gatsby-starter-default"
+  ]
+}
