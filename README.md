@@ -10,14 +10,12 @@ Demo'ing two issues.
 3. Run `yarn` to install packages
 4. Run `yarn develop` to start the dev server.
 
-Both issues concern shadowed components in *gatsby-starter-default/src/gatsby-theme-minimal-example/templates/*.
-
 ### Issue \#1
 
 ##### Page query is not run in shadow component when original component is imported.
 
-In *article.js*, the component is **not** imported.  
-In *section.js*, the component is imported.
+In [article.js](https://github.com/laradevitt/demo-gatsby-shadow-template/blob/master/gatsby-starter-default/src/gatsby-theme-minimal-example/templates/article.js), the component is **not** imported.  
+In [section.js](https://github.com/laradevitt/demo-gatsby-shadow-template/blob/master/gatsby-starter-default/src/gatsby-theme-minimal-example/templates/section.js), the component is imported.
 
 Warnings during site build:
 
@@ -35,8 +33,8 @@ warn The GraphQL query in the non-page component "D:/lib/dev/temp/demo-gatsby-sh
 
 ##### GraphQL error: Multiple "root" queries found
 
-Change the query name in the shadow component *article.js* so that it is the
-same as the query name in the original component (see comments in file).
+Change the query name in the shadow component [article.js](https://github.com/laradevitt/demo-gatsby-shadow-template/blob/master/gatsby-starter-default/src/gatsby-theme-minimal-example/templates/article.js) so that it is the
+same as the query name in the [original component](https://github.com/laradevitt/demo-gatsby-shadow-template/blob/master/gatsby-theme-minimal-example/src/templates/article.js).
 
 Resulting error:
 
