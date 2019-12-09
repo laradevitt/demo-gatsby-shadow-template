@@ -7,7 +7,7 @@ const Article = ({ data }) => <Layout><pre>{JSON.stringify(data, null, 4)}</pre>
 // Changing the name of this query to 'ArticleQuery' will result in error:
 // `Multiple "root" queries found in file: "ArticleQuery" and "ArticleQuery"`
 export const query = graphql`
-  query ArticleDupeQuery($uid: String!) {
+  query ArticleQuery($uid: String!) {
     prismic {
       article(uid: $uid, lang: "en-ca") {
         title

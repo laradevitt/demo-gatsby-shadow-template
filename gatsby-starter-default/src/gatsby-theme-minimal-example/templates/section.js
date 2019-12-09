@@ -1,9 +1,18 @@
-import React from 'react';
-import Section from 'gatsby-theme-minimal-example/src/templates/section';
-import Layout from '../../components/layout';
+import React from "react"
+import { graphql } from "gatsby"
+import Layout from "../../components/layout"
 
-export default props => (
-  <Layout>
-    <Section {...props} />
-  </Layout>
-)
+const Section = ({ data }) => <Layout><pre>{JSON.stringify(data, null, 4)}</pre></Layout>
+
+export const query = graphql`
+  query SectionQuery($uid: String!) {
+    prismic {
+      section(uid: $uid, lang: "en-ca") {
+        title
+        _linkType
+      }
+    }
+  }
+`
+
+export default Section
