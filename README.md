@@ -1,6 +1,9 @@
 # demo-gatsby-shadow-template
 
-Updated demo as [requested by @LekoArts](https://github.com/gatsbyjs/gatsby/issues/19980#issuecomment-565987183).
+- 2020-01-14: Updated packages; issues still exist.
+- 2012-12-16: Updated demo as [requested by @LekoArts](https://github.com/gatsbyjs/gatsby/issues/19980#issuecomment-565987183).
+
+
 
 ### Set up
 
